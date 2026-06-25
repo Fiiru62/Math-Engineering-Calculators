@@ -1,0 +1,226 @@
+{
+  "app": {
+    "indexTitle": "Binary Relation Property Generator"
+  },
+  "header": {
+    "title": "Relaciones binarias — Propiedades",
+    "subtitle": "Herramienta para analizar automáticamente las propiedades de relaciones binarias",
+    "languageButton": "Idioma",
+    "syntaxButton": "Guía sintaxis",
+    "propertiesLabel": "Guía propiedades",
+    "theme": {
+      "light": "Modo claro",
+      "dark": "Modo oscuro"
+    }
+  },
+  "home": {
+    "title": "Calculadoras",
+    "subtitle": "Seleccione una herramienta",
+    "metaDescription": "Menú principal para acceder a las diferentes calculadoras: relaciones binarias y límites.",
+    "cards": {
+      "relations": {
+        "title": "Calculadora de relaciones binarias",
+        "description": "Analiza las propiedades de conjuntos binarios de manera automática."
+      },
+      "limits": {
+        "title": "Calculadora de límites",
+        "description": "Calculadora de límites de todo tipo, junto con el procedimiento de resolución paso a paso."
+      },
+      "resolvent": {
+        "title": "Calculadora de fórmula resolvente",
+        "description": "Calculadora para resolver y obtener las raices de ecuaciones cuadráticas usando la fórmula resolvente. (Proximamente)."
+      },
+      "integrals": {
+        "title": "Calculadora de integrales",
+        "description": "Calculadora para resolver integrales indefinidas y definidas. (Proximamente)."
+      },
+      "derivatives": {
+        "title": "Calculadora de derivadas",
+        "description": "Calculadora para resolver derivadas de funciones. (Proximamente)."
+      },
+      "truthTables": {
+        "title": "Tablas de verdad",
+        "description": "Calculadora para generar tablas de verdad de expresiones lógicas. (Proximamente)."
+      }
+    }
+  },
+  "limits": {
+    "pageTitle": "Calculadora de límites",
+    "metaDescription": "Calculadora de límites de todo tipo, junto con el procedimiento de resolución paso a paso.",
+    "backToMenu": "Volver al menú",
+    "typesLabel": "Tipos de limites",
+    "calculator": {
+      "heading": "Motor de Cálculo de Límites",
+      "hint": "Ingrese las expresiones del límite en base a x. El denominador no es obligatorio.",
+      "numerator": "Numerador — f(x)",
+      "denominator": "Denominador — g(x)",
+      "denominatorOptional": "(opcional)",
+      "whenTendsTo": "Cuando x tiende a",
+      "placeholder": {
+        "numerator": "Ej: sin(x) - x",
+        "denominator": "Ej: x^3",
+        "tendency": "Ej: 0, 3, Infinity"
+      },
+      "infinityPlus": "+∞",
+      "infinityMinus": "-∞",
+      "calculateButton": "Calcular límite",
+      "calculating": "Calculando...",
+      "result": "Resultado",
+      "procedure": "Procedimiento",
+      "noSteps": "-----",
+      "ellipsis": "..."
+    },
+    "messages": {
+      "noExist": "No existe",
+      "couldNotDetermineSymbolically": "No se pudo determinar simbólicamente.",
+      "nerdamerFailed": "Nerdamer no pudo resolver simbólicamente el límite.",
+      "errorCalculating": "Error al calcular:",
+      "infinite": "Infinito",
+      "notDefined": "No definido",
+      "maxIterationsReached": "Máximo de iteraciones alcanzado.",
+      "oscillationDetected": "La función oscila infinitamente cerca del punto.",
+      "oscillationNoLHopital": "Se detectó oscilación (ej. sin(1/x)). No se aplica L'Hôpital.",
+      "lateralLeft": "Límite lateral izquierdo (x→{t}−): {value}",
+      "lateralRight": "Límite lateral derecho (x→{t}+): {value}",
+      "directCalculated": "Límite calculado: {value}",
+      "bothLateralsEqual": "Ambos laterales coinciden → Límite bilateral = {value}",
+      "lateralsDifferent": "Los límites laterales son distintos o la función oscila. El límite bilateral no existe.",
+      "attempt": "Intento {n}: evaluando límite en x→{t}",
+      "detectedIndet": "Se detectó indeterminación {type}. Se aplica L'Hôpital.",
+      "derivatives": "Derivadas: num'={num}, den'={den}",
+      "numeratorNotZeroDenZero": "Numerador no es 0 y denominador tiende a 0 → Infinito.",
+      "derivativeError": "No se pudo calcular la derivada.",
+      "infiniteSign": "+∞/-∞"
+    }
+  },
+  "relations": {
+    "pageTitle": "Relaciones binarias — Propiedades",
+    "metaDescription": "Herramienta para analizar propiedades de relaciones binarias: reflexiva, simétrica, transitiva, etc.",
+    "backToMenu": "Volver al menú",
+    "editor": {
+      "label": "Ingrese la relación (Ej: {(A,B),(B,C),(C,C)})",
+      "inputPlaceholder": "Ingrese una relación",
+      "analyzeButton": "Analizar"
+    },
+    "parsed": {
+      "title": "Relación parseada",
+      "pairsLabel": "Pares:",
+      "baseSetLabel": "Conjunto base:"
+    },
+    "results": {
+      "reflexive": "Reflexiva",
+      "irreflexive": "Irreflexiva",
+      "symmetric": "Simétrica",
+      "asymmetric": "Asimétrica",
+      "antisymmetric": "Antisimétrica",
+      "transitive": "Transitiva",
+      "yes": "Sí",
+      "no": "No"
+    },
+    "errors": {
+      "emptyInput": "Entrada vacía",
+      "noPairs": "No se encontraron pares válidos. Use el formato {(A,B),(C,D)}"
+    }
+  },
+  "modal": {
+    "close": "Cerrar"
+  },
+  "propertiesGuide": {
+    "title": "Guía de propiedades",
+    "heading": "Propiedades y ejemplos",
+    "reflexive": {
+      "title": "Reflexiva:",
+      "desc": "Para todo x en el conjunto base, (x,x) está en la relación. Ejemplo: base {A,B}, relación contiene (A,A) y (B,B)."
+    },
+    "irreflexive": {
+      "title": "Irreflexiva:",
+      "desc": "Ningún (x,x) pertenece a la relación. Ejemplo: relación (A,B) sin (A,A) ni (B,B)."
+    },
+    "symmetric": {
+      "title": "Simétrica:",
+      "desc": "Si (a,b) está entonces (b,a) también. Ejemplo: (A,B),(B,A)."
+    },
+    "asymmetric": {
+      "title": "Asimétrica:",
+      "desc": "No hay (x,x) y si (a,b) con a≠b entonces no está (b,a). Ejemplo: (A,B) sin (B,A)."
+    },
+    "antisymmetric": {
+      "title": "Antisimétrica:",
+      "desc": "Si (a,b) y (b,a) están entonces a=b. Ejemplo: (A,A),(B,B) cumple."
+    },
+    "transitive": {
+      "title": "Transitiva:",
+      "desc": "Si (a,b) y (b,c) están entonces (a,c) debe estar. Ejemplo: (A,B),(B,C),(A,C)."
+    }
+  },
+  "syntaxGuide": {
+    "title": "Guía de sintaxis",
+    "formatHeading": "Formato aceptado",
+    "formatExplanation": "Escribe la relación como una lista de pares ordenados dentro de llaves. Ejemplos válidos:",
+    "examples": "{(A,B),(B,C),(C,A)}",
+    "rulesHeading": "Reglas",
+    "rules": [
+      "Pares con paréntesis: (a,b).",
+      "Separar pares con comas, envolver todo en llaves: { ... }.",
+      "Se permiten espacios extra. Los símbolos distinguen mayúsculas y minúsculas.",
+      "Para relación vacía usa {}."
+    ],
+    "advice": "Consejo: Usa letras sencillas para los elementos del conjunto base (A, B, C...), o números si lo prefieres."
+  },
+  "syntaxGuideLimits": {
+    "title": "Guía de uso",
+    "formatHeading": "Formato aceptado",
+    "formatExplanation": "Escribe expresiones matemáticas usando la sintaxis estándar. Algunos ejemplos válidos:",
+    "examples": ["sin(x)", "x^2 + 3*x", "sqrt(x+1)", "log(x+1)", "exp(x)"],
+    "rulesHeading": "Reglas",
+    "rules": [
+      "Usa * para multiplicar: 2*x.",
+      "Usa ^ para potencias: x^2.",
+      "Usa paréntesis para agrupar expresiones.",
+      "Para raíces usa sqrt(x).",
+      "Para logaritmo natural usa log(x) (no ln(x)).",
+      "Para exponenciales usa exp(x).",
+      "Para valor absoluto usa abs(x)."
+    ],
+    "advice": "Consejo: Si obtienes un resultado inesperado, revisa la sintaxis de la expresión y el uso correcto de funciones como log(), sqrt() o exp()."
+  },
+    "typesLimits": {
+            "title": "Tipos de límites soportados",
+            
+            "limitAtPointTitle": "Límites en un punto",
+            "limitAtPointDesc": "Calculan el valor al que se aproxima la función cuando la variable x se acerca a un número específico.",
+            
+            "limitAtInfinityTitle": "Límites al infinito",
+            "limitAtInfinityDesc": "Analizan el comportamiento de la función para entender qué pasa cuando x crece o decrece sin límite hacia ±∞.",
+            
+            "finiteLimitsTitle": "Límites finitos",
+            "finiteLimitsDesc": "Ocurren cuando, al evaluar la tendencia, el resultado del límite se estabiliza en un número real exacto y definido.",
+            
+            "infiniteLimitsTitle": "Límites infinitos",
+            "infiniteLimitsDesc": "Se dan cuando la función no tiene un tope y su valor crece o decrece indefinidamente hacia ±∞ al acercarse a un punto determinado.",
+            
+            "oneSidedLimitsTitle": "Límites laterales",
+            "oneSidedLimitsDesc": "Evalúan el comportamiento de la función separando la aproximación por la izquierda y por la derecha. Son esenciales para confirmar si el límite general existe.",
+            
+            "indeterminateLimitsTitle": "Límites con indeterminaciones",
+            "indeterminateLimitsDesc": "Detectan y resuelven casos matemáticos sin solución directa (como las formas 0/0 o ∞/∞), aplicando métodos avanzados como la regla de L'Hôpital."
+        },
+  "relationsUtils": {
+    "entryEmpty": "Entrada vacía",
+    "noValidPairs": "No se encontraron pares válidos. Use el formato {(A,B),(C,D)}",
+    "reflexiveTrue": "Existe (x,x) para todo elemento.",
+    "reflexiveFalse": "Faltan pares diagonales: {pairs}.",
+    "irreflexiveTrue": "No existe ningún par (x,x).",
+    "irreflexiveFalse": "Se encontraron pares reflexivos: {pairs}.",
+    "symmetricTrue": "Todo par tiene su recíproco.",
+    "symmetricFalse": "Faltan recíprocos.",
+    "asymmetricTrue": "No hay pares reflexivos ni recíprocos.",
+    "asymmetricFalse": "No cumple condición de asimetría.",
+    "antisymmetricTrue": "No existen pares mutuos distintos.",
+    "antisymmetricFalse": "Se encontraron contraejemplos.",
+    "transitiveTrue": "Se cumple la condición transitiva.",
+    "transitiveFalse": "Faltan pares para cumplir transitividad.",
+    "formatPair": "({a},{b})",
+    "emptySet": "∅"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "app": {
+    "indexTitle": "Binary Relation Property Generator"
+  },
+  "header": {
+    "title": "Binary Relations — Properties",
+    "subtitle": "Tool to automatically analyze properties of binary relations",
+    "languageButton": "Language",
+    "syntaxButton": "Syntax guide",
+    "propertiesLabel": "Properties guide",
+    "theme": {
+      "light": "Light mode",
+      "dark": "Dark mode"
+    }
+  },
+  "home": {
+    "title": "Calculators",
+    "subtitle": "Select a tool",
+    "metaDescription": "Main menu to access the different calculators: binary relations and limits.",
+    "cards": {
+      "relations": {
+        "title": "Binary relations calculator",
+        "description": "Automatically analyzes the properties of binary sets."
+      },
+      "limits": {
+        "title": "Limits calculator",
+        "description": "Calculator for limits of all types, along with the step-by-step resolution procedure."
+      },
+      "resolvent": {
+        "title": "Quadratic formula calculator",
+        "description": "Calculator to solve and obtain the roots of quadratic equations using the quadratic formula. (Coming soon)."
+      },
+      "integrals": {
+        "title": "Integrals calculator",
+        "description": "Calculator to solve indefinite and definite integrals. (Coming soon)."
+      },
+      "derivatives": {
+        "title": "Derivatives calculator",
+        "description": "Calculator to solve derivatives of functions. (Coming soon)."
+      },
+      "truthTables": {
+        "title": "Truth tables",
+        "description": "Calculator to generate truth tables for logical expressions. (Coming soon)."
+      }
+    }
+  },
+  "limits": {
+    "pageTitle": "Limits calculator",
+    "metaDescription": "A calculator for all types of limits, including a step-by-step solution process.",
+    "backToMenu": "Back to menu",
+    "typesLabel": "Types of limits",
+    "calculator": {
+      "heading": "Limits Calculation Engine",
+      "hint": "Enter the limit expressions using x as the variable. The denominator is optional.",
+      "numerator": "Numerator — f(x)",
+      "denominator": "Denominator — g(x)",
+      "denominatorOptional": "(optional)",
+      "whenTendsTo": "When x tends to",
+      "placeholder": {
+        "numerator": "Eg: sin(x) - x",
+        "denominator": "Eg: x^3",
+        "tendency": "Eg: 0, 3, Infinity"
+      },
+      "infinityPlus": "+∞",
+      "infinityMinus": "-∞",
+      "calculateButton": "Calculate limit",
+      "calculating": "Calculating...",
+      "result": "Result",
+      "procedure": "Procedure",
+      "noSteps": "-----",
+      "ellipsis": "..."
+    },
+    "messages": {
+      "noExist": "Does not exist",
+      "couldNotDetermineSymbolically": "Could not determine symbolically.",
+      "nerdamerFailed": "Nerdamer could not resolve the limit symbolically.",
+      "errorCalculating": "Error calculating:",
+      "infinite": "Infinity",
+      "notDefined": "Not defined",
+      "maxIterationsReached": "Maximum number of iterations reached.",
+      "oscillationDetected": "The function oscillates infinitely near the point.",
+      "oscillationNoLHopital": "Oscillation detected (e.g. sin(1/x)). L'Hôpital not applied.",
+      "lateralLeft": "Left lateral limit (x→{t}−): {value}",
+      "lateralRight": "Right lateral limit (x→{t}+): {value}",
+      "directCalculated": "Limit calculated: {value}",
+      "derivativeError": "Could not calculate derivative.",
+      "invalidSyntax": "Invalid syntax in expression.",
+      "bothLateralsEqual": "Both lateral limits match → Bilateral limit = {value}",
+      "lateralsDifferent": "The lateral limits are different or the function oscillates. Bilateral limit does not exist.",
+      "attempt": "Attempt {n}: evaluating limit at x→{t}",
+      "detectedIndet": "Detected indeterminate form {type}. Applying L'Hôpital's rule.",
+      "derivatives": "Derivatives: num'={num}, den'={den}",
+      "numeratorNotZeroDenZero": "Numerator is not 0 and denominator tends to 0 → Infinity.",
+      "infiniteSign": "+∞/-∞"
+    }
+  },
+  "relations": {
+    "pageTitle": "Binary Relations — Properties",
+    "metaDescription": "Tool to analyze properties of binary relations: reflexive, symmetric, transitive, etc.",
+    "backToMenu": "Back to menu",
+    "editor": {
+      "label": "Enter the relation (Eg: {(A,B),(B,C),(C,C)})",
+      "inputPlaceholder": "Enter a relation",
+      "analyzeButton": "Analyze"
+    },
+    "parsed": {
+      "title": "Parsed relation",
+      "pairsLabel": "Pairs:",
+      "baseSetLabel": "Base set:"
+    },
+    "results": {
+      "reflexive": "Reflexive",
+      "irreflexive": "Irreflexive",
+      "symmetric": "Symmetric",
+      "asymmetric": "Asymmetric",
+      "antisymmetric": "Antisymmetric",
+      "transitive": "Transitive",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "errors": {
+      "emptyInput": "Empty input",
+      "noPairs": "No valid pairs found. Use format {(A,B),(C,D)}"
+    }
+  },
+  "modal": {
+    "close": "Close"
+  },
+  "propertiesGuide": {
+    "title": "Properties guide",
+    "heading": "Properties and examples",
+    "reflexive": {
+      "title": "Reflexive:",
+      "desc": "For every x in the base set, (x,x) is in the relation. Example: base {A,B}, relation contains (A,A) and (B,B)."
+    },
+    "irreflexive": {
+      "title": "Irreflexive:",
+      "desc": "No (x,x) belongs to the relation. Example: relation (A,B) without (A,A) nor (B,B)."
+    },
+    "symmetric": {
+      "title": "Symmetric:",
+      "desc": "If (a,b) is present then (b,a) is also present. Example: (A,B),(B,A)."
+    },
+    "asymmetric": {
+      "title": "Asymmetric:",
+      "desc": "There are no (x,x) and if (a,b) with a≠b then (b,a) is not present. Example: (A,B) without (B,A)."
+    },
+    "antisymmetric": {
+      "title": "Antisymmetric:",
+      "desc": "If (a,b) and (b,a) exist then a=b. Example: (A,A),(B,B) satisfies it."
+    },
+    "transitive": {
+      "title": "Transitive:",
+      "desc": "If (a,b) and (b,c) exist then (a,c) must exist. Example: (A,B),(B,C),(A,C)."
+    }
+  },
+  "syntaxGuide": {
+    "title": "Syntax guide",
+    "formatHeading": "Accepted format",
+    "formatExplanation": "Write the relation as a list of ordered pairs inside braces. Valid examples:",
+    "examples": "{(A,B),(B,C),(C,A)}",
+    "rulesHeading": "Rules",
+    "rules": [
+      "Pairs with parentheses: (a,b).",
+      "Separate pairs with commas, wrap everything in braces: { ... }.",
+      "Extra spaces are allowed. Symbols are case-sensitive.",
+      "For empty relation use {}."
+    ],
+    "advice": "Tip: Use simple letters for base set elements (A, B, C...), or numbers if you prefer."
+  },
+  "syntaxGuideLimits": {
+    "title": "Usage guide",
+    "formatHeading": "Accepted format",
+    "formatExplanation": "Write mathematical expressions using standard syntax. Some valid examples:",
+    "examples": ["sin(x)", "x^2 + 3*x", "sqrt(x+1)", "log(x+1)", "exp(x)"],
+    "rulesHeading": "Rules",
+    "rules": [
+      "Use * for multiplication: 2*x.",
+      "Use ^ for powers: x^2.",
+      "Use parentheses to group expressions.",
+      "For roots use sqrt(x).",
+      "For natural log use log(x) (not ln(x)).",
+      "For exponentials use exp(x).",
+      "For absolute value use abs(x)."
+    ],
+    "advice": "Tip: If you get an unexpected result, check the expression syntax and correct use of functions like log(), sqrt() or exp()."
+  },
+    "typesLimits": {
+                "title": "Supported limit types",
+                
+                "limitAtPointTitle": "Limits at a point",
+                "limitAtPointDesc": "They calculate the value the function approaches when the variable x gets closer to a specific number.",
+                
+                "limitAtInfinityTitle": "Limits at infinity",
+                "limitAtInfinityDesc": "They analyze the behavior of the function to understand what happens when x increases or decreases without bound towards ±∞.",
+                
+                "finiteLimitsTitle": "Finite limits",
+                "finiteLimitsDesc": "These occur when, upon evaluating the trend, the result of the limit stabilizes at an exact and defined real number.",
+                
+                "infiniteLimitsTitle": "Infinite limits",
+                "infiniteLimitsDesc": "These occur when the function has no bound and its value increases or decreases indefinitely towards ±∞ as it approaches a specific point.",
+                
+                "oneSidedLimitsTitle": "One-sided limits",
+                "oneSidedLimitsDesc": "They evaluate the behavior of the function by separating the approach from the left and from the right. They are essential to confirm whether the general limit exists.",
+                
+                "indeterminateLimitsTitle": "Limits with indeterminate forms",
+                "indeterminateLimitsDesc": "They detect and solve mathematical cases without a direct solution (such as the 0/0 or ∞/∞ forms), applying advanced methods like L'Hôpital's rule."
+            },
+  "relationsUtils": {
+    "entryEmpty": "Empty input",
+    "noValidPairs": "No valid pairs found. Use format {(A,B),(C,D)}",
+    "reflexiveTrue": "(x,x) exists for every element.",
+    "reflexiveFalse": "Missing diagonal pairs: {pairs}.",
+    "irreflexiveTrue": "No pair (x,x) exists.",
+    "irreflexiveFalse": "Found reflexive pairs: {pairs}.",
+    "symmetricTrue": "Every pair has its reciprocal.",
+    "symmetricFalse": "Missing reciprocals.",
+    "asymmetricTrue": "No reflexive or reciprocal pairs.",
+    "asymmetricFalse": "Does not satisfy asymmetry condition.",
+    "antisymmetricTrue": "No distinct mutual pairs exist.",
+    "antisymmetricFalse": "Counterexamples were found.",
+    "transitiveTrue": "Transitive condition holds.",
+    "transitiveFalse": "Missing pairs to satisfy transitivity.",
+    "formatPair": "({a},{b})",
+    "emptySet": "∅"
+  }
+}

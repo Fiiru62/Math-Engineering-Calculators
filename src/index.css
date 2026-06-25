@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 74% 94%;
+    --foreground: 210 29% 24%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 24%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 24%;
+    --primary: 11 70% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 44 72% 67%;
+    --secondary-foreground: 210 29% 24%;
+    --muted: 43 74% 94%;
+    --muted-foreground: 210 11% 46%;
+    --accent: 44 72% 67%;
+    --accent-foreground: 210 29% 24%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 43 30% 85%;
+    --input: 43 30% 85%;
+    --ring: 11 70% 62%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 210 29% 24%;
+    --foreground: 43 74% 94%;
+    --card: 210 20% 18%;
+    --card-foreground: 43 74% 94%;
+    --popover: 210 20% 18%;
+    --popover-foreground: 43 74% 94%;
+    --primary: 11 70% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 44 72% 67%;
+    --secondary-foreground: 210 29% 24%;
+    --muted: 210 20% 30%;
+    --muted-foreground: 43 30% 70%;
+    --accent: 44 72% 67%;
+    --accent-foreground: 210 29% 24%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 30%;
+    --input: 210 20% 30%;
+    --ring: 11 70% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+    overflow-x: clip;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Estilos de arrastrar y soltar */
+.dnd-zone {
+  @apply min-h-[120px] p-4 rounded-xl border-2 border-dashed transition-colors duration-200 flex flex-wrap gap-2 items-start content-start;
+}
+
+.dnd-zone.active {
+  @apply border-primary bg-primary/5;
+}
+
+.dnd-chip {
+  @apply px-4 py-2 bg-white border border-border rounded-lg shadow-sm cursor-grab active:cursor-grabbing hover:border-primary hover:shadow-md transition-all duration-200 font-medium text-foreground select-none;
+}
+
+.dnd-chip.dragging {
+  @apply opacity-50 scale-95 shadow-none;
+}
