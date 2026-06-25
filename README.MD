@@ -7,3 +7,8 @@ El objetivo principal del proyecto es unificar en una sola aplicación web diver
 Actualmente, la aplicación se encuentra en desarrollo y cuenta con dos calculadoras funcionales. Además, incluye la estructura de diferentes herramientas que serán incorporadas próximamente.
 
 El desarrollo del proyecto continuó posteriormente para la materia de **Cálculo 1** de la misma carrera y universidad, incorporando nuevas funcionalidades y ampliando el alcance de la aplicación.
+
+Actualmente se puede probar la web mediante el siguiente link:
+https://proyecto-final-calculo1.netlify.app/
+
+A futuro tanto el dominio como diferentes secciones de la web pueden cambiar.
